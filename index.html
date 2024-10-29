@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+                 <!-- Lock Screen -->
+    <div id="lock-screen" class="lock-screen">
+                 <div class="lock-container">
+                     <h1 class="lock-title">Enter 4-Digit Code</h1>
+                     <div class="pin-inputs">
+                         <input type="password" maxlength="1" class="pin-box" id="digit1">
+                         <input type="password" maxlength="1" class="pin-box" id="digit2">
+                         <input type="password" maxlength="1" class="pin-box" id="digit3">
+                         <input type="password" maxlength="1" class="pin-box" id="digit4">
+                     </div>
+  .                   <button class="unlock-btn" onclick="checkPin()">Unlock</button>
+                     <p id="error-message" class="error-message"></p>
+                 </div>
+             </div>
     <header>
         <div class="logo">
-            <h1>MyMovie<span>Hub</span></h1>
+            <h1>Watch<span>hub</span></h1>
             <p>Escape into the world of movies</p>
         </div>
     </header>
@@ -20,9 +34,12 @@
             <!-- Add movie posters here for the carousel -->
             <img src="st.png" alt="Movie 1">
             <img src="we.png" alt="Movie 2">
+            <img src="AOUAD.png" alt="Movie 2">
             <img src="sg.png" alt="Movie 3">
             <img src="bb.png" alt="Movie 4">
             <img src="fm.png" alt="Movie 4">
+            <img src="MB.png" alt="Movie 4">
+            <img src="pancha.png" alt="Movie 4">
         </div>
     </section>
 
@@ -30,34 +47,31 @@
         <h2>My Collection</h2>
         <div class="movies">
             <!-- Movie 1 (Sector36.mkv) -->
-            <div class="movie">
-                <img src="Sector36.png" alt="Sector 36">
-                <div class="overlay">
-                    <button class="play-btn" onclick="playMovie('Sector36.mp4')">Play Now</button>
-                </div>
-            </div>
             <!-- Movie 2 (movie2.mp4) -->
             <div class="movie">
                 <img src="Wednesday.png" alt="Movie 2">
                 <div class="overlay">
-                    <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
+                    <button class="play-btn" onclick="playMovie('Wednesday.mp4')">Play Now</button>
                 </div>
             </div>
             <div class="movie">
                  <img src="squid game.png" alt="Movie 2">
                  <div class="overlay">
-                     <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
+                     <button class="play-btn" onclick="playMovie('Wednesday.mp4')">Play Now</button>
                  </div>
              </div>
              <div class="movie">
                  <img src="Stranger Things.png" alt="Movie 2">
                  <div class="overlay">
-                     <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
+                     <button class="play-btn" onclick="playMovie('movie2.mp4')">S1</button>
+                     <button class="play-btn" onclick="playMovie('movie2.mp4')">S2</button>
+                     <button class="play-btn" onclick="playMovie('movie2.mp4')">S3</button>
+                     <button class="play-btn" onclick="playMovie('movie2.mp4')">S4</button> 
                  </div>
              </div>
              <div class="movie">
-                 <img src="Breaking Bed.png" alt="Movie 2"> 
-                 <div class="overlay">
+                 <img src="Breaking Bed.png" alt="Movie 2">
+                 <div class="overlay ">
                      <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
                  </div>
              </div>
@@ -67,8 +81,88 @@
                      <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
                  </div>
              </div>
+             <div class="movie">
+                <img src="Manjummel Boys.png" alt="Movie 2">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('manjummel Boys.mp4')">Play Now</button>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="Panchayat.png" alt="Movie 2">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('movie2.mp4')">S1</button>
+                    <button class="play-btn" onclick="playMovie('movie2.mp4')">S2</button>
+                    <button class="play-btn" onclick="playMovie('movie2.mp4')">S3</button>
+                </div>
+            </div>
+            <div class="movie">
+                 <img src="All Of Us Are Dead.png" alt="Movie 2">
+                 <div class="overlay">
+                     <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
+                 </div>
+             </div>
+             <div class="movie">
+                 <img src="Suzhal the vortex.png" alt="Movie 2">
+                 <div class="overlay">
+                     <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
+                 </div>
+             </div>
+             <div class="movie">
+                 <img src="Scam 1992.png" alt="Movie 2">
+                 <div class="overlay">
+                     <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
+                 </div>
+             </div>
+             <div class="movie">
+                 <img src="Titanic.png" alt="Movie 2">
+                 <div class="overlay">
+                     <button class="play-btn" onclick="playMovie('movie2.mp4')">Play Now</button>
+                 </div>
+             </div>
+             <div class="movie">
+                <img src="Sector36.png" alt="Sector 36">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('Sector36.mp4')">Play Now</button>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="Kaithi.png" alt="Sector 36">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('Sector36.mp4')">Play Now</button>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="Vikram.png" alt="Sector 36">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('Sector36.mp4')">Play Now</button>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="Leo.png" alt="Sector 36">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('Sector36.mp4')">Play Now</button>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="Master.png" alt="Sector 36">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('Sector36.mp4')">Play Now</button>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="96.png" alt="Sector 36">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('Sector36.mp4')">Play Now</button>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="bhool bhulaiyaa.png" alt="Sector 36">
+                <div class="overlay">
+                    <button class="play-btn" onclick="playMovie('Sector36.mp4')">Play Now</button>
+                </div>
+            </div>
             <!-- Add more movies here if needed -->
-        </div> 
+        </div>
     </section>
 
     <div id="movie-modal" class="modal">
@@ -81,4 +175,5 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
